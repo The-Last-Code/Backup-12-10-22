@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap");
+body,
+button {
+  font-family: "Inter", sans-serif;
+}
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+@media (min-width: 992px) {
+  body {
+    overflow: auto !important;
+  }
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
+
+
+table
+{
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.171);
+
+    text-align: center;
+    height: 30vh;
+    width: 80%;
+    margin: auto;
+}
+
+table h4
+{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+
+table p, table span
+{
+    font-size: 1.6rem;
+    align-items: center;
+}
+
+table tr .titulo
+{
+    height: 1px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #838383d1;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    transition: all 0.3s;
+}
+
+
+table tr .res
+{
+    height: 30vh;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: #ffffff;
+    transition: all 0.3s;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+
+table tr .dt
+{
+    height: 1px;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    background-color: #ffffff;
+    border-top: 1px solid rgb(208, 208, 208);
+    transition: all 0.3s;
+
+}
+
+table tr .dt div
+{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+table tr .dt div span
+{
+    background-color: #7191f1d1;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+table .dt
+{
+    background-color: rgb(255, 255, 255) !important;
+    border-radius: 0 0 15px 15px;
+}
+
+.linkedin
+{
+    height: 15px;
+    width: 15px;
+  border-radius: 50px;
+  background-color: #0A66C2;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.linkedin:hover
+{
+  box-shadow: 0px 15px 20px #0a66c27e;
+  transform: translateY(-7px);
+}
+
+
+.twitter
+{
+  border-radius: 50px;
+  background-color: #1DA1F2;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+}
+
+.twitter:hover
+{
+  box-shadow: 0px 15px 20px #1da0f27e;
+  transform: translateY(-7px);
+}
+
+.instagram
+{
+  border-radius: 50px; 
+   
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+
+.instagram:hover{
+  box-shadow: 0px 15px 20px #bc18884e;
+  transform: translateY(-7px);
+}
+
