@@ -44,8 +44,7 @@ class User extends Cadastro{
         $this->lattes_cientista = $string;
     }
     public function setsnh_cientista($string){
-        $this->snh_cientista = $string; 
-        echo $string;  
+        $this->snh_cientista = $string;  
     }
  
     //Metodos Get
@@ -87,4 +86,6 @@ class User extends Cadastro{
     }
     
 }
+
+
 ?>

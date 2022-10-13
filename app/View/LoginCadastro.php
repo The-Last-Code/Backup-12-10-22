@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SciLink - Login</title>
     <link rel="icon" href="./img/logo.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="./css/styleLogin.css">
+    <link rel="stylesheet" href="../View/style/styleLogin.css">
   </head>
   <body>
     <main>
       <div class="box">
         <div class="inner-box">
           <div class="forms-wrap">
-            <form action="../app/Controllers/LoginController.php"  class="sign-in-form" method="POST">
+            <form action="../Controllers/LoginController.php"  class="sign-in-form" method="POST">
               <div class="logo">
                 <img src="./img/logo.png" alt="easyclass" />
                 <h4>SciLink</h4>
@@ -53,7 +53,7 @@
 <!--  ************************************************* CADASTRO *************************************************  -->
 <!--  ************************************************************************************************************  -->
 
-            <form action="../app/Controllers/CadastroController.php" method="POST" class="sign-up-form">
+            <form action="../Controllers/CadastroController.php" method="POST" class="sign-up-form">
             <div class="logo">
                 <img src="./img/logo.png" alt="easyclass" />
                 <h4>SciLink</h4>
@@ -117,7 +117,7 @@
            
               </div>
          
-              <input type="submit" value="Crie sua Conta" class="sign-btn" />
+              <input type="submit" value="Crie sua Conta" class="sign-btn" name="pub" />
         
               </div>
           

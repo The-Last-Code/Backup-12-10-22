@@ -20,6 +20,24 @@ button {
 .sidebar-link[aria-expanded="true"] .right-icon {
   transform: rotate(180deg);
 }
+
+.btnVoltar
+{
+  background-color: #dd2222;
+  padding: 10px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btnVoltar:hover
+{
+  color: white;
+  background-color: #7191f1d1;
+}
+
 @media (min-width: 992px) {
   body {
     overflow: auto !important;
@@ -41,11 +59,13 @@ button {
 }
 
 
+
 table
 {
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.171);
-
+    margin-top: 2% !important;
+    margin-bottom: 1% !important;
     text-align: center;
     height: 30vh;
     width: 80%;
@@ -55,36 +75,43 @@ table
 table h4
 {
     font-weight: 600;
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 table p, table span
 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     align-items: center;
 }
 
 table tr .titulo
 {
     height: 1px;
-    padding-top: 1%;
+    padding-top: 2%;
     padding-bottom: 1%;
-    background-color: #838383d1;
+    background-color: #7191f1d1;
     color: white;
     border-radius: 15px 15px 0 0;
     transition: all 0.3s;
 }
 
+table tr .titulo:hover,
+table tr .res:hover,
+table tr .dt:hover
+{
+    opacity: 50%;
+}
 
 table tr .res
 {
-    height: 30vh;
+    height: 1px;
     padding-top: 2%;
     padding-bottom: 1%;
     background-color: #ffffff;
     transition: all 0.3s;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: justify;
 }
 
 
@@ -92,7 +119,7 @@ table tr .dt
 {
     height: 1px;
     padding-top: 2%;
-    padding-bottom: 1%;
+    padding-bottom: 0%;
     background-color: #ffffff;
     border-top: 1px solid rgb(208, 208, 208);
     transition: all 0.3s;
@@ -123,52 +150,3 @@ table .dt
     background-color: rgb(255, 255, 255) !important;
     border-radius: 0 0 15px 15px;
 }
-
-.linkedin
-{
-    height: 15px;
-    width: 15px;
-  border-radius: 50px;
-  background-color: #0A66C2;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-}
-
-.linkedin:hover
-{
-  box-shadow: 0px 15px 20px #0a66c27e;
-  transform: translateY(-7px);
-}
-
-
-.twitter
-{
-  border-radius: 50px;
-  background-color: #1DA1F2;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-}
-
-.twitter:hover
-{
-  box-shadow: 0px 15px 20px #1da0f27e;
-  transform: translateY(-7px);
-}
-
-.instagram
-{
-  border-radius: 50px; 
-   
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-  background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-}
-
-.instagram:hover{
-  box-shadow: 0px 15px 20px #bc18884e;
-  transform: translateY(-7px);
-}
-

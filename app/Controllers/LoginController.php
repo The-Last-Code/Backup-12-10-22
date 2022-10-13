@@ -10,21 +10,13 @@
 
        $o=$log->Login($nom_cientista,$snh_cientista);
           if($o==true){
-            header('Location: ../Views/index.php');
+            header('Location: ../View/Home.php');
           }
           else{
             echo "<SCRIPT> //not showing me this
             alert('Senha ou CPF incorreto')
-            window.location.replace('../../public/index.php');
+            window.location.replace('../../app/View/LoginCadastro.php');
         </SCRIPT>";
           }
-      
-
-     
-
-
-
-
       }
-
 ?>

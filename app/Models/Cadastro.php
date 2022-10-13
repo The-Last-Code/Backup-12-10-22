@@ -16,8 +16,6 @@ require_once '../Conection/Conn.php';
          
             $pdo = new PDO('mysql:host='.HOST.';dbname='.DATABASENAME,USER,PASSWORD);
 
-            
-
             $sql = $pdo->prepare("SELECT *FROM cientista
 
                 WHERE cpf_cientista = :b");
@@ -45,14 +43,16 @@ require_once '../Conection/Conn.php';
                 $sql->bindValue(":f", $lattes_cientista);
                 $sql->bindValue(":g", $snh_cientista);
                 $sql->execute();
+                $pdo = null;
                 return true;
                  
             }
             return false;
             }
             
-
+           
         }
+        
     
 
 ?>
